@@ -1,15 +1,11 @@
-p {
-    color: red;
-	family-font: Verdana;
-	family-size: 30px;
-  }
+
 		
 th {
     color: green;
 	family-font: Courier;
 }
 
-<div style="width:1400px; height:50px; background-color:green"></div>
+
 
 h2 {
     color: blue;
