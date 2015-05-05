@@ -1,13 +1,55 @@
 
-		
-th {
-    color: green;
-	family-font: Courier;
+
+#header {
+     background-color: #5F9EA0;
+	 position: fixed;
+	 height: 50px;
+	 width: 1200px;
+	 z-index: 1;
+	 margin-left: 340px;
+	 border-radius: 5px;
 }
 
-
+#name {
+     color: #DEB887;
+	 font-family: Adobe Minion Cyrillic;
+	 text-align: center;
+	 font-size: 40px;
+	 margin-top: -1px;
+}
+	
+       
+ table {
+	border: #000000 1px solid;
+	background-color: #acd1b2;
+	margin: auto;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
 
 h2 {
-    color: blue;
-	font-size: 50px;
+    font-family: Verdana;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 125px;
+	padding-bottom: 25px;
+	color: #acd1b2;
+}
+
+#footer {
+    clear: both;
+    background-color: #5F9EA0;
+	width: 1200px;
+	height: 100px;
+	margin-left: 340px;
+	border-radius: 5px;
+	text-align: center;
+	color: #DEB887;
+	font-family: Adobe Minion Cyrillic;
+	font-size: 40px;
+	padding-top: px;
+}
+
+#footer p {
+    padding-top: 30px;
 }
