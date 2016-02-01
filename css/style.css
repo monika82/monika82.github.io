@@ -95,11 +95,10 @@ body
 	background-color: #515a58;
 }
 .fb
-{
-	margin: 10px;
+{	margin: 10px;
 	width: 105px;
 	height: 142px;
-	background-color:	#4668b3;
+	background-color: #2C3B63;
 	float: left;
 }
 .fb:hover
@@ -111,7 +110,7 @@ body
 	margin: 10px;
 	width: 105px;
 	height: 142px;
-	background-color:	#d95333;
+	background-color:	#2C3B63;
 	float: left;
 }
 .gplus:hover
