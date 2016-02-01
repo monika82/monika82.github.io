@@ -96,10 +96,8 @@ body
 }
 .fb
 {	margin: 10px;
-	width: 105px;
-	height: 142px;
-	background-color: #2C3B63;
 	float: left;
+	text-align: center;
 }
 .fb:hover
 {
@@ -108,10 +106,8 @@ body
 .gplus
 {
 	margin: 10px;
-	width: 105px;
-	height: 142px;
-	background-color:	#2C3B63;
 	float: left;
+	text-align: center;
 }
 .gplus:hover
 {
