@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" ng-app="portfolio">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,20 +13,21 @@
     <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
     <link href='https://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     
+    
   </head>
   
   <body>
     <div id="container">
       <div class="rectangle">
-        <div id="logo"><a href="index.html" class="titlelinkhtml5">Monika Kowalczyk</a></div>
+        <div id="logo"><a ui-sref="kimjestem" class="titlelinkhtml5">Monika Kowalczyk</a></div>
         <div style="clear:both"></div>
       </div>
      
       <div class="square">
         <div class="title1">
-          <a href="kimjestem.html"class="titlelink"><i class="icon-user"></i><br/>kim jestem</a>
+          <a ui-sref="kimjestem" class="titlelink"><i class="icon-user"></i><br/>kim jestem</a>
           </div>
-        <a href="oferta.html" class="titlelinkhtml5">
+        <a ui-sref="oferta" class="titlelinkhtml5">
           <div class="title1">
           <i class="icon-laptop"></i><br/>Oferta
           </div>
@@ -34,11 +35,10 @@
         <div style="clear:both"></div>
         
         <div class="title2">
-          <a href="cv.html"class="titlelink"><i class="icon-graduation-cap"></i><br/>Curriculum Vitae</a
-          >
+          <a ui-sref="cv"class="titlelink"><i class="icon-graduation-cap"></i><br/>Curriculum Vitae</a>
         </div>
         <div class="title3">
-          <a href="kontakt.html"class="titlelink"><i class="icon-mail"></i><br/>Kontakt</a>
+          <a ui-sref="kontakt"class="titlelink"><i class="icon-mail"></i><br/>Kontakt</a>
         </div>
         <div style="clear:both"></div>
         
@@ -48,13 +48,7 @@
       </div>
       
       <div class="square">
-        <div class="title5">Tytuł podstrony<br/><br/>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit ipsum a arcu sollicitudin, 
-          at bibendum felis feugiat. Fusce dictum, lectus eu porttitor tristique, orci ipsum scelerisque augue, et posuere urna risus nec massa. 
-          Mauris bibendum libero id erat ullamcorper luctus.
-        </div>
-        
-        
+        <div ui-view></div>     
         
         <div class="fb"><a href="http://facebook.com" target="_blank" class="titlelink"><i class="icon-facebook"></i></a></div>
         <div class="gplus"><a href="http://plus.google.com" target="_blank" class="titlelink"><i class="icon-gplus"></i></a></div>
@@ -66,4 +60,15 @@
       
     </div>
   </body>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.min.js" />
+  <script src="app/app.config.js"/>
+  <script src="app/app.states.js"/>
+  <script src="app/components/cv/cv.controller.js"/>
+  <script src="app/components/kimjestem/kimjestem.controller.js"/>
+  <script src="app/components/kontakt/kontakt.controller.js"/>
+  <script src="app/components/oferta/oferta.controller.js"/>
+  
+ 
   </html>
