@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('starterProject')
+    angular.module('portfolio')
         .controller('ofertaController', ofertaController);
 
     function ofertaController(){

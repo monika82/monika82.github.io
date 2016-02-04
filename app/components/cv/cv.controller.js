@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('starterProject')
+    angular.module('portfolio')
         .controller('cvController', cvController);
 
     function cvController(){
