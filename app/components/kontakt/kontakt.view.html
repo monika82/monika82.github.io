@@ -1,5 +1,50 @@
 <div class="title5">Kontakt<br/><br/>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit ipsum a arcu sollicitudin, 
-        at bibendum felis feugiat. Fusce dictum, lectus eu porttitor tristique, orci ipsum scelerisque augue, et posuere urna risus nec massa. 
-        Mauris bibendum libero id erat ullamcorper luctus.
+<div class="container">
+	<div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="well well-sm">
+          <form class="form-horizontal" method="post" name="contact.userForm" ng-submit="contact.submitMessage(contact.message)">
+          <fieldset>
+            <legend class="text-center">{{contact.title}}</legend>
+    
+            <!-- Name input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Name</label>
+              <div class="col-md-9">
+                <input id="name" name="name" type="text" placeholder="Your name" class="form-control" ng-model="contact.message.name" required="true">
+              </div>
+            </div>
+    
+            <!-- Email input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Your E-mail</label>
+              <div class="col-md-9">
+                <input id="email" name="email" type="text" placeholder="Your email" class="form-control" ng-model="contact.message.email" required="true">
+              </div>
+            </div>
+    
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Your message</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5" ng-model="contact.message.content" required="true"></textarea>
+              </div>
+            </div>
+    
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+	</div>
+<!-- 	<h1>Message Object</h1>
+	  {{contact.message}}
+	<h1>userForm</h1>
+      {{contact.userForm}} -->
+</div>
 </div>
